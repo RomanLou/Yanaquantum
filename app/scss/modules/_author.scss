@@ -1,0 +1,29 @@
+.author {
+	background: url(../images/background/bg-author.png) no-repeat top center;
+	background-size: cover;
+	padding-bottom: 5px;
+	padding-bottom: 80px;
+
+	&__list {
+
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&-item {
+			padding: 15px;
+			display: flex;
+			align-items: center;
+			position: relative;
+			margin: 0 10px;
+		}
+	}
+
+	&__icon {
+		color: $wine;
+		font-size: 3rem;
+		margin-right: 25px;
+	}
+}

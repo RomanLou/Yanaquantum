@@ -1,0 +1,61 @@
+.presentation {
+	background: url(../images/background/bg-presentation.jpg) no-repeat top center;
+	background-color: rgba(125, 145, 49, .5);
+	background-blend-mode: darken;
+	background-size: cover;
+	padding-bottom: 50px;
+	
+	&__wrapper {
+		background: rgba(255, 255, 255, .9);
+		padding: 30px 50px;
+		border-radius: 10px;
+		margin-bottom: 30px;
+	}
+
+	&__list {
+		margin-top: 20px;	
+			
+
+		&-item {
+			position: relative;
+			display: inline-block;
+			margin-top: 10px;	
+
+			&:before {
+				content: '';
+				background: $orange;
+				border-radius: 50%;
+				@include size(10px);
+				@include pos($t: 5px, $l: -20px);				
+			}
+		}
+	}
+
+	&__text {
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+	}
+
+	&__reg {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__link {
+		font-weight: 700;
+		font-size: 1.3rem;
+		display: inline-block;
+		margin-top: 20px;
+
+		&:hover {
+			color: $orange;
+			text-decoration: none;
+		}
+
+		&-wrapper {
+			text-align: center;
+		}
+		
+	}
+}	

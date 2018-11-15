@@ -1,0 +1,50 @@
+.questions {
+	background: #F8F8F8 url(../images/background/bg-author.png) no-repeat top center;
+	background-size: 100% auto;
+	padding-bottom: 80px;
+
+	&__accordion {
+		max-width: 80%;
+		transition: none;
+		margin: 0 auto;
+
+		* {
+			transition: none;
+		}
+	}
+
+	&__wrapper {
+		background-color: rgba(253, 227, 104, .7);
+		padding: 15px;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 1.2rem;
+		background: $wine;
+		padding: 15px !important;
+		color: $white;
+
+		&:before {
+			content: '+';
+			font-size: 3rem;
+			line-height: 1rem;
+			font-weight: 300;
+			position: relative;
+			top: 10px;
+			margin-right: 15px;
+		}
+
+		&.ui-accordion-header-active:before {
+			content: '-';
+			top: 10px;
+			font-size: 3.5rem;
+		}
+
+	}
+
+	&__text {
+		line-height: 1.5rem;
+	}
+}
+

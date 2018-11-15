@@ -1,0 +1,10 @@
+.testimonials {
+	background: url(../images/background/bg-author.png) no-repeat top center;
+	background-size: cover;
+	padding-bottom: 30px;
+
+	&__wrapper {
+		margin: 0 30px 30px 0;
+		text-align: center;
+	}
+}

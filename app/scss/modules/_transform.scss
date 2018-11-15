@@ -1,0 +1,33 @@
+.transform {
+	background: url(../images/background/bg-header.png) no-repeat top center;
+	background-size: cover;
+	padding-bottom: 30px;
+	position: relative;
+
+	&__wrapper {
+		text-align: center;
+		padding: 15px;
+		border-radius: 5px;
+		font-size: .8rem;
+		z-index: 2;
+	}
+
+	&__text {
+		text-align: left;
+		padding: 10px;
+		text-align: center;	
+		line-height: 1.1;
+		font-weight: 600;
+	}
+
+	&__icon {
+		font-size: 4rem;
+		text-align: center;
+		color: $wine;
+	}
+
+	&__counter {
+		font-size: 1.5rem;
+		font-weight: 900;
+	}
+}

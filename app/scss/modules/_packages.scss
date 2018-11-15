@@ -1,0 +1,93 @@
+.packages {
+	background: url(../images/background/bg-packages.png) no-repeat top center;
+	background-size: cover;
+
+	&__wrapper {
+		margin-bottom: 50px;
+	}
+
+	&__product {
+		font-size: 1.5rem;
+		margin: -20px 0 50px;
+		color: $white;
+		text-align: center;
+	}
+
+	&__subtitle {
+		font-size: 1.5rem;
+		font-weight: 900;
+		color: $wine;
+		padding: 20px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		padding: 5px;
+		text-align: center;
+		font-weight: 700;
+
+		&--spaced {
+			margin: 20px 0;
+		}
+
+		&-wrapper {
+			background: $grey;
+			text-align: center;
+			padding: 50px;
+			font-size: 1.2rem;
+		}
+	}
+
+	&__item {
+		margin: 0 25px 33px;
+		position: relative;
+		box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08);
+
+		&-wrapper {
+			background: $grey;
+			padding: 20px;
+			position: relative;
+			z-index: 3;
+		}
+		
+
+		&:before, &:after {
+			content: '';
+			background: $yellow;
+			@include size(50%, 35%);
+			z-index: 0;
+		}
+
+		&:before {
+			@include pos($t: -20px, $l: -20px);
+		}
+
+		&:after {
+			@include pos($b: -20px, $r: -20px);
+		}
+	}
+
+	&__list {
+		font-size: .8rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		&-item {
+			margin-bottom: 10px;
+		}
+
+		&-text {
+			font-weight: 600;
+
+			&--lined {
+				font-weight: 300;
+				text-decoration:line-through;
+				color: grey;
+				font-style: italic;
+			}
+		}
+
+	}
+}

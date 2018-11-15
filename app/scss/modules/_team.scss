@@ -1,0 +1,48 @@
+.team {
+	background: url(../images/background/bg-team.png) no-repeat top center;
+	background-size: cover;
+	padding-bottom: 80px;
+
+	&-slider {
+
+		width: 80%;
+		margin: 0 auto;
+
+		&__item {
+			background-color: rgba(255, 255, 255, .9);
+			padding: 30px;
+			display: flex !important;
+			justify-content: space-around;
+			align-items: center;
+			margin: 0 auto;
+			border-radius: 10px;
+
+			&-wrapper {
+				padding-left: 50px;
+			}
+		}
+
+		&__photo {
+			height: 200px;
+			border-radius: 50%;
+		}
+
+		&__title {
+			font-weight: 900;
+			margin-bottom: 5px;
+		}
+
+		&__text {
+			margin-top: 30px;
+			font-size: .9rem;
+		}
+	}
+		.slick-prev:before, .slick-next:before {
+		    font-size: 70px;
+		    color: #00569C;
+		    left: -100px;
+		    top: -13px;
+		    background: white;
+		    position: absolute;
+		}
+}

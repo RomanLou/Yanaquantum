@@ -1,0 +1,43 @@
+.result {
+	background: url(../images/background/bg-result.png) no-repeat top center;
+	background-size: cover;
+	padding-bottom: 50px;
+
+	&__text {
+		font-size: .9rem;
+	}
+	
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		&-wrapper {
+			background-color: rgba(255, 255, 255, .9);
+			border-radius: 5px;
+			padding: 15px 15px 0 35px;
+			margin: 0 10px;	
+			text-align: center;
+		}
+
+		&-icon {
+			display: inline-block;
+			margin: 10px auto;
+		}
+
+		&-item {
+			position: relative;
+			text-align: left;
+			margin-bottom: 20px;
+
+			&:before {
+				content: '';
+				background: $wine;
+				border-radius: 50%;
+				@include size(10px);
+				@include pos($t: 3px, $l: -20px);				
+			}
+		}
+	}
+
+}
