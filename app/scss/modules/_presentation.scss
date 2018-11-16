@@ -4,12 +4,24 @@
 	background-blend-mode: darken;
 	background-size: cover;
 	padding-bottom: 50px;
+
+	@media (max-width: 670px) {
+		padding-bottom: 20px;
+	}
 	
 	&__wrapper {
 		background: rgba(255, 255, 255, .9);
 		padding: 30px 50px;
 		border-radius: 10px;
 		margin-bottom: 30px;
+
+		@media (max-width: 670px) {
+			padding: 10px 10px;
+		}
+
+		@media (max-width: 375px) {
+			border-radius: 0;
+		}
 	}
 
 	&__list {
@@ -26,7 +38,11 @@
 				background: $orange;
 				border-radius: 50%;
 				@include size(10px);
-				@include pos($t: 5px, $l: -20px);				
+				@include pos($t: 5px, $l: -20px)
+
+				@media (max-width: 670px) {
+					left: 0;
+				}				
 			}
 		}
 	}
@@ -34,6 +50,10 @@
 	&__text {
 		font-size: 1.2rem;
 		line-height: 1.5rem;
+
+		@media (max-width: 670px) {
+			margin-left: 20px;
+		}
 	}
 
 	&__reg {

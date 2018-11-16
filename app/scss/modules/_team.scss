@@ -3,10 +3,18 @@
 	background-size: cover;
 	padding-bottom: 80px;
 
+	@media (max-width: 670px) {
+		padding-bottom: 20px;
+	}
+
 	&-slider {
 
-		width: 80%;
+		width: 70%;
 		margin: 0 auto;
+
+		@media (max-width: 670px) {
+			width: 100%;
+		}
 
 		&__item {
 			background-color: rgba(255, 255, 255, .9);
@@ -16,20 +24,38 @@
 			align-items: center;
 			margin: 0 auto;
 			border-radius: 10px;
+			min-height: 280px;
+
+			@media (max-width: 375px) {
+				flex-direction: column;
+				padding: 10px;
+			}
 
 			&-wrapper {
 				padding-left: 50px;
+
+				@media (max-width: 670px){
+					padding-left: 10px;
+				}
 			}
 		}
 
 		&__photo {
 			height: 200px;
 			border-radius: 50%;
+
+			@media (max-width: 375px){
+			margin-bottom: 20px;
+			}
 		}
 
 		&__title {
 			font-weight: 900;
 			margin-bottom: 5px;
+
+			@media (max-width: 670px){
+				text-align: center;
+			}
 		}
 
 		&__text {
@@ -37,12 +63,52 @@
 			font-size: .9rem;
 		}
 	}
-		.slick-prev:before, .slick-next:before {
-		    font-size: 70px;
-		    color: #00569C;
-		    left: -100px;
-		    top: -13px;
-		    background: white;
-		    position: absolute;
+
+	.slick-arrow {
+		@include pos ($t: 50%);
+		transform: 	translateY(-100%);
+		cursor: pointer;
+		display: block;
+
+		@media (max-width: 375px) {
+			display: none!important;
 		}
+	}
+
+	.slick-prev {
+		left: -10%;
+	}
+
+	.slick-next {
+		right: -10%;
+	}
+
+	.slick-dots {
+		display: 	flex;
+		justify-content: 	center;
+		padding: 20px;
+
+		@media (max-width: 670px){
+			padding: 0;
+		}
+
+		li {
+			background: $wine;
+			@include size(12px);
+			border-radius: 50%;
+			margin: 10px;
+
+			& button {
+               display: none;
+           }
+		}
+	}
+
+	li.slick-active {
+		@include size(15px);
+		background: $orange;
+	}
+
+
+
 }

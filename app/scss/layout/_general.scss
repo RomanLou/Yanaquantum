@@ -21,6 +21,14 @@ body, html {
 	width: 100%;
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
+
+	@media (max-width: 1024px) {
+		font-size: 14px;
+	}
+
+	@media (max-width: 670px) {
+		font-size: 12px;
+	}
 }
 
 .clear::after, .clear::before {
@@ -38,6 +46,13 @@ body, html {
 	text-align: center;
 	padding: 80px 0 50px;
 	text-transform: uppercase;
+	position: relative;	
+	display: block;	
+	margin: 0 auto;
+
+	@media (max-width: 670px) {
+		padding: 20px 10px;
+	}
 }
 
 .button {
@@ -70,32 +85,12 @@ body, html {
 	}
 }
 
-.red {
-	color: red;
-}
-
 .orange {
 	color: $orange;
 }
 
 .yellow {
 	color: $yellow;
-}
-
-.green {
-	color: 	green;
-}
-
-.lblue {
-	color: 	#1B8EC9;
-}
-
-.blue {
-	color: blue;
-}
-
-.indigo {
-	color: indigo;
 }
 
 .wine {

@@ -66,7 +66,8 @@ gulp.task('modules', function() {
       './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
       './node_modules/slick-carousel/slick/slick.min.js',
       './node_modules/slick-carousel/slick/slick.css',
-      './js/libs/jquery-ui/jquery-ui.min.js'
+      './node_modules/jquery-ui-dist/jquery-ui.min.js',
+      './node_modules/jquery-ui-dist/jquery-ui.min.css'
     ]
     gulp.src(sources).pipe(gulp.dest('app/js/modules/'));
 });

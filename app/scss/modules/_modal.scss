@@ -1,0 +1,143 @@
+.modal {
+
+	&__subtitle {
+		font-size: 2.5rem;
+		font-weight: 900;
+		text-align: center;
+		text-transform: uppercase;
+		position: relative;	
+		display: block;	
+		margin: 0 auto;
+		margin: 30px 0 60px;
+
+		@media (max-width: 670px) {
+			margin: 10px 20px;
+		}
+
+		@media (max-width: 375px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__wrapper {
+
+		margin: 20px auto;
+		text-align: center;
+
+		@media (max-width: 375px) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__field {
+		display: inline-block;
+		margin-left: 20px;
+		font: 1.2rem 'Montserrat', sans-serif;
+		color: $grey;
+		border-bottom: 1px solid $white;
+		background: transparent;
+
+		@media (max-width: 375px) {
+		margin-top: 30px;
+		width: 85%;
+	}
+
+
+	}
+
+	&__text {
+		text-align: left;
+		display: inline-block;
+		width: 150px;
+		font-size: 1.2rem;
+		font-weight: 700;
+
+		@media (max-width: 670px) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__img--tl {
+		@include pos($t:0, $l:0);
+
+		@media (max-width: 768px){
+			width: 25%;
+		}
+	}
+	
+	&__img--br {
+		@include pos($b:0, $r:0);
+
+		@media (max-width: 768px){
+			width: 25%;
+		}
+	}
+}
+
+#modal_form {
+	width: 800px; 
+	height: 450px; 
+	background: url(../images/background/bg-form.png) no-repeat top center;
+	background-size: cover;
+	position: fixed; 
+	top: -500px; 
+	left: 50%; 
+	transform: translateX(-50%);
+	opacity: 0; 
+	z-index: 5; 
+	padding: 20px 10px;
+	color: $white;
+
+	@media (max-width: 768px) {
+		width: 80%;
+	}
+	@media (max-width: 670px) {
+		height: 80%;
+	}
+
+	& .button {
+		cursor: pointer;
+		padding: 20px 50px;
+		background: transparent;
+
+		&__wrapper {
+
+			@media (max-width: 670px) {
+				padding: 10px 0;
+			}
+		}
+	}
+}
+
+		
+#modal_form #modal_close {
+	padding: 10px;
+	font-size: 2rem;
+	font-weight: 900;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+
+	&:hover {
+		color: $orange;
+	}
+}
+
+#overlay {
+	z-index:3; 
+	position:fixed; 
+	background-color:#000; 
+	opacity:0.8; 
+	-moz-opacity:0.8; 
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; 
+	top:0; 
+	left:0;
+	cursor:pointer;
+	display:none; 
+}

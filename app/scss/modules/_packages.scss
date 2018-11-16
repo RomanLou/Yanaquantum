@@ -4,6 +4,10 @@
 
 	&__wrapper {
 		margin-bottom: 50px;
+
+		@media (max-width: 375px) {
+			margin-bottom: 0;
+		}
 	}
 
 	&__product {
@@ -36,6 +40,10 @@
 			text-align: center;
 			padding: 50px;
 			font-size: 1.2rem;
+
+			@media (max-width: 670px) {
+				padding: 10px;
+			}
 		}
 	}
 
@@ -43,6 +51,10 @@
 		margin: 0 25px 33px;
 		position: relative;
 		box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08);
+
+		@media (max-width: 768px) {
+			margin: 0 auto 50px;
+		}
 
 		&-wrapper {
 			background: $grey;
@@ -61,10 +73,19 @@
 
 		&:before {
 			@include pos($t: -20px, $l: -20px);
+			
+			@media (max-width: 375px) {
+				@include pos($t: -5px, $l: -5px);	
+			}
+
 		}
 
 		&:after {
 			@include pos($b: -20px, $r: -20px);
+
+			@media (max-width: 375px) {
+				@include pos($b: -5px, $r: -5px)
+			}
 		}
 	}
 

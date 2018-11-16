@@ -3,6 +3,10 @@
 	background-size: cover;
 	padding-bottom: 50px;
 
+	@media (max-width: 670px) {
+		padding-bottom: 20px;
+	}
+
 	&__text {
 		font-size: .9rem;
 	}
@@ -18,11 +22,27 @@
 			padding: 15px 15px 0 35px;
 			margin: 0 10px;	
 			text-align: center;
+
+			@media (max-width: 670px) {
+				margin-bottom: 20px;
+			}
+
+			@media (max-width: 375px){
+				margin: 20px auto;
+			}
 		}
 
 		&-icon {
 			display: inline-block;
 			margin: 10px auto;
+
+			@media (max-width: 768px) {
+				width: 60%;
+			}
+
+			@media (max-width: 670px) {
+				width: 30%;
+			}
 		}
 
 		&-item {
